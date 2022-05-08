@@ -139,3 +139,4 @@ Module.symvers
 Mkfile.old
 dkms.conf
 Mini-Project/CustomProjectDrivers/FatFS/*
+Notes.md

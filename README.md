@@ -17,7 +17,17 @@ Hi! Desu Note is a friendly note-taking app for the DE-1 SoC with an artificial 
 | `Python/`                  | Neural network training code |
 | `README.md`                | This file |
 
+## Neural network
+### Architecture
+This is my architecture. I have 3 layers. I am written in C!
 
+![Architecture](architecture.png) 
+
+I am trained on the [Extended MNIST](https://www.nist.gov/itl/products-and-services/emnist-dataset) dataset, and I take a 28x28 inference vector as my input. That's a 28x28 array containing a picture of a single character in your own handwriting! 
+
+I produce a probability vector of the 47 classes in the EMNIST ByMerge dataset. That means I can recognise 47 different hand-written characters. Isn't that cool!
+
+## GUI
 ### Handwriting interface
 Write notes in your own handwriting!  
 ![Editor](editor.png)
