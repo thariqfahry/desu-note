@@ -18,7 +18,7 @@
 							<option id="com.arm.toolchain.ac5.option.fppcs.896883591" name="Floating-point PCS" superClass="com.arm.toolchain.ac5.option.fppcs" value="com.arm.tool.c.compiler.option.fppcs.auto" valueType="enumerated"/>
 							<option id="com.arm.toolchain.ac5.option.inst.891807734" name="Instruction set" superClass="com.arm.toolchain.ac5.option.inst" value="com.arm.tool.c.compiler.option.inst.arm" valueType="enumerated"/>
 							<targetPlatform id="com.arm.eclipse.build.config.baremetal.exe.debug.382613200..1051965131" name=""/>
-							<builder buildPath="${workspace_loc:/Mini-Project}/Debug" id="com.arm.toolchain.baremetal.builder.540074342" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="com.arm.toolchain.baremetal.builder"/>
+							<builder buildPath="${workspace_loc:/Mini-Project}/Debug" enableCleanBuild="true" id="com.arm.toolchain.baremetal.builder.540074342" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="com.arm.toolchain.baremetal.builder"/>
 							<tool id="com.arm.tool.c.compiler.baremetal.exe.debug.1337467700" name="ARM C Compiler 5" superClass="com.arm.tool.c.compiler.baremetal.exe.debug">
 								<option defaultValue="com.arm.tool.c.compiler.option.optlevel.min" id="com.arm.tool.c.compiler.baremetal.exe.debug.base.option.opt.1279228214" name="Optimization level" superClass="com.arm.tool.c.compiler.baremetal.exe.debug.base.option.opt" useByScannerDiscovery="true" valueType="enumerated"/>
 								<option id="com.arm.tool.c.compiler.option.incpath.1850008576" name="Include path (-I)" superClass="com.arm.tool.c.compiler.option.incpath" useByScannerDiscovery="false" valueType="includePath">
@@ -27,6 +27,11 @@
 								<option id="com.arm.tool.c.compiler.option.targetcpu.855839579" name="Target CPU (--cpu)" superClass="com.arm.tool.c.compiler.option.targetcpu" useByScannerDiscovery="true" value="Cortex-A9.no_neon.no_vfp" valueType="string"/>
 								<option id="com.arm.tool.c.compiler.option.fppcs.1059789985" name="Floating-point PCS (--apcs)" superClass="com.arm.tool.c.compiler.option.fppcs" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.option.fppcs.auto" valueType="enumerated"/>
 								<option id="com.arm.tool.c.compiler.option.inst.1123346448" name="Instruction set" superClass="com.arm.tool.c.compiler.option.inst" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.option.inst.arm" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.option.defmac.295811373" name="Define macro (-D)" superClass="com.arm.tool.c.compiler.option.defmac" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="HARDWARE_OPTIMISED"/>
+								</option>
+								<option id="com.arm.tool.c.compile.option.lang.567034129" name="Source language mode" superClass="com.arm.tool.c.compile.option.lang" useByScannerDiscovery="true" value="com.arm.tool.c.compile.option.lang.auto" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.option.gnu.318828016" name="Enable GNU extensions (--gnu)" superClass="com.arm.tool.c.compiler.option.gnu" useByScannerDiscovery="true" value="true" valueType="boolean"/>
 								<inputType id="com.arm.tool.c.compiler.input.1964471457" superClass="com.arm.tool.c.compiler.input"/>
 								<inputType id="com.arm.tool.cpp.compiler.input.262002133" superClass="com.arm.tool.cpp.compiler.input"/>
 							</tool>
@@ -42,7 +47,7 @@
 							<tool id="com.arm.tool.c.linker.284849078" name="ARM Linker 5" superClass="com.arm.tool.c.linker">
 								<option id="com.arm.tool.c.linker.option.cpu.1285636726" name="Target CPU (--cpu)" superClass="com.arm.tool.c.linker.option.cpu" value="Cortex-A9.no_neon.no_vfp" valueType="string"/>
 								<option id="com.arm.tool.c.linker.option.entry.2076232567" name="Image entry point (--entry)" superClass="com.arm.tool.c.linker.option.entry" value="__main" valueType="string"/>
-								<option id="com.arm.tool.c.linker.option.scatter.1206782294" name="Scatter file (--scatter)" superClass="com.arm.tool.c.linker.option.scatter" value="${workspace_loc}\ELEC5620M-Resources\ScatterFiles\FPGARomRam.scat" valueType="string"/>
+								<option id="com.arm.tool.c.linker.option.scatter.1206782294" name="Scatter file (--scatter)" superClass="com.arm.tool.c.linker.option.scatter" value="${workspace_loc}\ELEC5620M-Resources\ScatterFiles\DDRRomRam.scat" valueType="string"/>
 							</tool>
 							<tool id="com.arm.tool.librarian.250350277" name="ARM Librarian 5" superClass="com.arm.tool.librarian"/>
 						</toolChain>

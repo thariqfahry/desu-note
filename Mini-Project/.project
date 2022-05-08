@@ -30,4 +30,15 @@
 			<locationURI>WORKSPACE_LOC/ELEC5620M-Resources/Drivers</locationURI>
 		</link>
 	</linkedResources>
+	<filteredResources>
+		<filter>
+			<id>1651679913005</id>
+			<name></name>
+			<type>22</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-true-false-test09123.c</arguments>
+			</matcher>
+		</filter>
+	</filteredResources>
 </projectDescription>
