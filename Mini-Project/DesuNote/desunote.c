@@ -76,8 +76,8 @@ void Tutorial(void) {
 
     // Display intro graphic.
     bg(title);
-    msleep(2000);
-    
+    //msleep(2000);
+    wtr();
     // Write initial messages to display.
     bg(single_line_bg);
     writeString("Hello, and welcome to to Desu Note. I'm Kanna-san! I'm a fully-connected feedforward neural network trained on the EMNIST dataset.", 

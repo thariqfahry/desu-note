@@ -87,7 +87,7 @@ void DrawForever(void){
     while(1){
     while(is_screen_being_touched()){
         position = AD7843_getCalibXY();
-        drawRectangle(position.x, position.y, 3, 3, LT24_RED);
+        drawRectangle(position.x, position.y, 3, 3, LT24_BLUE);
         HPS_ResetWatchdog();
     }
     if (*KEY_ptr) LT24_clearDisplay(LT24_BLACK);

@@ -18,7 +18,7 @@
 #define AD7843_ERRORNOINIT  -1
 
 // Number of reference points for calibration algorithm
-#define NCalib 20 
+#define NCalib 10
 
 /**
  * init_touch

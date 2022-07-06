@@ -240,7 +240,7 @@ unsigned int send8bit(unsigned char command){
         *ad7843_pio_ptr |= 1ul << dclk; *ad7843_pio_ptr &= ~(1ul << dclk);
 
         temp = temp << 1;
-        usleep(200);
+        usleep(100);
     }
 
     usleep(1000);
